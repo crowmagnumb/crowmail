@@ -1,0 +1,5 @@
+# ---- Mailman‑Web required secret ---------------------------------
+SECRET_KEY=
+# I think these are optional because they are the default values
+#MAILMAN_WEB_HOST=http://localhost:8000
+#MAILMAN_REST_URL=http://mailman-core:8000

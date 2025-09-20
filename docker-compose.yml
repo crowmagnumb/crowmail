@@ -1,14 +1,16 @@
 services:
     mailman-core:
         image: maxking/mailman-core:latest
-        #env_file: .env
+        restart: unless-stopped
+        env_file: .env
         volumes:
             - mailman-data:/opt/mailman
         ports:
             - "8025:8025" # HTTP UI (optional)
     mailman-web:
         image: maxking/mailman-web:latest
-        #env_file: .env
+        restart: unless-stopped
+        env_file: .env
         depends_on:
             - mailman-core
         ports:
