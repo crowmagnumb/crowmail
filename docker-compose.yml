@@ -1,4 +1,3 @@
-version: "3.8"
 services:
     mailman-core:
         image: maxking/mailman-core:latest
