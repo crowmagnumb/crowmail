@@ -30,8 +30,8 @@ nano .env # Paste key
 Setup Apache
 
 ```sh
-cp mailman.conf /etc/apache2/sites-available
-nano /etc/apache2/sites-available/mailman.conf # change mailman.example.com
+sudo cp mailman.conf /etc/apache2/sites-available
+sudo nano /etc/apache2/sites-available/mailman.conf # change mailman.example.com
 sudo a2ensite mailman.conf
 sudo systemctl reload apache2
 ```
